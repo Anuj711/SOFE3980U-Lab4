@@ -27,6 +27,11 @@ public class App
 		}
 		
 		int count=0;
+		//Added in print statement to show table headers
+		System.out.println("y_true" + "  \t  "+ "y_predicted"); 
+		
+		
+		//Start of updated code to calculate MSE, MAE, and MARE
 		for (String[] row : allData) { 
 			float y_true=Float.parseFloat(row[0]);
 			float y_predicted=Float.parseFloat(row[1]);
