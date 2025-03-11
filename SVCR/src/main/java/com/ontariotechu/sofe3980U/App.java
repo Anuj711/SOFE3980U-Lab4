@@ -9,7 +9,7 @@ import com.opencsv.*;
  */
 public class App {
     public static void main(String[] args) {
-        String filePath = "model_1.csv";
+        String filePath = "model_3.csv";
         FileReader filereader;
         List<String[]> allData;
         
@@ -49,7 +49,7 @@ public class App {
             mare /= count;
         }
         
-        System.out.println("\nEvaluation Metrics:");
+        System.out.println("\nEvaluation Metrics for " + filePath + ":");
         System.out.println("MSE: " + mse);
         System.out.println("MAE: " + mae);
         System.out.println("MARE (%): " + mare);
